@@ -1,0 +1,11 @@
+->Create a new folder that is to be shared in the local network
+mkdir shared_files_folder
+
+->Move to the newly created shared folder
+cd shared_files_folder
+
+->Make sure the system has python installed and run this command
+python -m http.server 8000
+
+->Fetch the ip address using the ipconfig command from cmd and search for the same from other device's browser connected to the same network
+192.168.43.52:8000
