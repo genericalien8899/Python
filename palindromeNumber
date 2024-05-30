@@ -1,0 +1,14 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        str1 = str(x)
+        counter = 0
+        if len(str1)==1:
+            return(True)
+        else:
+            for i in range(len(str1)//2):
+                if str1[i] == str1[(len(str1)-1)-i]:
+                    counter = counter + 1
+                else:
+                    return(False)
+                if counter == len(str1)//2:
+                    return(True)
